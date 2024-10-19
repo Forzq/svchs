@@ -1,0 +1,44 @@
+.kaktuses{
+    display: flex;
+    width:  85%;
+    margin-left: 40px;
+    margin-top: 25px;
+    column-gap: 25px;
+  }
+  .kaktuses > div{
+    width: 219px;
+    height: 219px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .kaktusText{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    line-height: 28px;
+  }
+  .kecubung2{
+  padding-top: 6px;
+  }
+  .kecu{
+      font-weight: 400;margin-top: -8px;
+    }
+    .land{
+      font-weight: 400;padding-top: 10px;
+    }
+    .kaktusImg:hover, .kecu2Img:hover{
+        transition: 0.4s;
+        transform:scale(1.1);
+      }
+      @media screen and (max-width: 320px){
+      .kaktusImg{
+        width:130px;
+        height: 130px;
+      }
+    }
+    .MontserratFont {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        }

@@ -1,0 +1,35 @@
+.rowContainerFeat {
+    display: flex;
+    align-items: center;
+  }
+  .MontserratFont {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    }
+    .buyMore{
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        padding-left: 80px;
+        padding-right:140px;
+        line-height: 58px;
+      }
+      .buyMoreLorem{
+        padding-left: 80px;
+        padding-right: 126px;
+        padding-top: 70px;
+        line-height: 29px;
+      }
+      .plantOnATableDiv{
+        width: 568px;
+        height: 251px;
+        padding-left: 62px;
+        padding-top: 77px;
+        animation:opacity 8s infinite;
+      }
+      .plantsOnAWall{
+        padding-right: 32px;
+        padding-top: 20px;
+        width: 590px;
+        height: 920px;
+      }

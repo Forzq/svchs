@@ -1,0 +1,36 @@
+.FeaturedCheaper{
+    justify-content: space-between;
+    margin: 0px 40px 0 40px;
+    padding-top:3px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(224,224,224);
+  }
+  .MontserratFont {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    }
+    .rowContainerFeat {
+        display: flex;
+        align-items: center;
+      }
+      
+      .featPlants{
+        font-size: 20px;
+      }
+    #slid1, #slid2{
+        width: 50px;
+        border:none;
+        border-radius:10px;
+        padding: 5px;
+        font-size: 1.3em;
+      }
+      .cheaperFirstBorder{
+        border: 1px solid rgb(224,224,224);
+        padding: 8px 12px 8px 12px;
+      }
+      .cheap{
+        margin-bottom: -150px;
+      }
+      .downArrow{
+        padding-left: 16px;
+      }
