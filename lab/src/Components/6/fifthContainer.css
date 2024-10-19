@@ -1,0 +1,56 @@
+.fifthContainer{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 76px;
+    margin-bottom: 50px;
+    background: linear-gradient(-45deg,  rgb(243,244,246),  rgb(161, 212, 204),  rgb(102, 139, 134));
+      animation: fifthContainer 10s ease infinite;
+    background-size: 100% 100%;
+  }
+  .rowContainerFeat {
+    display: flex;
+    align-items: center;
+  }
+  .MontserratFont {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    }
+    .favouriteDiv{
+        margin-left: 95px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      .favourite{
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 58px;
+        letter-spacing: 0.4px;
+      }
+      .favouriteDiv{
+        margin-left: 95px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      .KFM{
+        text-decoration: none;
+        color: rgb(21, 105, 99);
+        }
+        .visitButton{
+            background-color:rgb(21, 105, 99);
+            border: none;
+            box-shadow: none;
+            height: auto;
+            width: auto;
+            padding: 8px 30px;
+            margin-top: 30px;
+          }
+          .visitShop{
+            color: rgb(250,254,254);
+            font-size: 15px;
+            width: 150px;
+          }
+          .plant5{
+            animation: slide 8s infinite;
+          }
