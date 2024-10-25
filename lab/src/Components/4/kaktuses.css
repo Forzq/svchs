@@ -1,13 +1,15 @@
 .kaktuses{
     display: flex;
-    width:  85%;
+    width:  97%;
+    justify-content: center;
     margin-left: 40px;
     margin-top: 25px;
     column-gap: 25px;
+    overflow-x: hidden;
   }
   .kaktuses > div{
     width: 219px;
-    height: 219px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,6 +1,8 @@
+
 .firstContainer{
     display: flex;
-    width:1280px;
+    justify-content: center;
+    width:auto;
   }
   .f1{
     width: 100%;
@@ -245,7 +247,7 @@
     font-size: 32px;
     color:rgb(21, 105, 99);
     padding-left: 5px;
-    padding-top: 14px;
+    margin: 0;
   }
   .next{
     color: rgb(242,242,242); 
@@ -258,7 +260,7 @@
   .rahasia{
     color: rgb(242,242,242); 
     font-size: 32px;
-    padding-top: 15px;
+    margin: 0;
   }
   .rect{
     border: 1px solid rgb(224,224,224);
