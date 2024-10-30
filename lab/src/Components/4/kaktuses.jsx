@@ -1,12 +1,12 @@
-import {Component} from "react";
+
 import "../../Components/4/kaktuses.css";
 import kaktusPlants from "../../img/kaktusPlants.svg";
 import landakPlants from "../../img/landakPlants.svg";
 import kekubungPlants1 from "../../img/kekubungPlants1.svg";
 import kekubungPlants3 from "../../img/kekubungPlants3.svg";
 
-class Kaktuses extends Component{
-    render(){
+export default function Kaktuses(){
+
         return(
             <div class="kaktuses">
                 <div class="item">
@@ -115,7 +115,3 @@ class Kaktuses extends Component{
               </div>
         )
     }
-      
-      
-}
-export default Kaktuses

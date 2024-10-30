@@ -1,4 +1,4 @@
-import {Component} from "react";
+
 import "../firstContainer/firstContainer.css";
 import cart from "../../img/cart.svg";
 import cottonbro from "../../img/cottonbro.png";
@@ -8,8 +8,8 @@ import logo from "../../img/logo.svg";
 import menu from "../../img/menu.png";
 import leftArrow from "../../img/leftArrow.svg";
 import rightArrow from "../../img/rightArrow.svg";
-class FirstContainer extends Component{
-    render(){
+export default function FirstContainer(){
+    
         return(
             <div className="firstContainer">
       <div className="cottonDiv">
@@ -128,7 +128,3 @@ class FirstContainer extends Component{
         </div>
         )
     }
-      
-      
-}
-export default FirstContainer

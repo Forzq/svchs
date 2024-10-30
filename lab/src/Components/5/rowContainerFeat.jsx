@@ -1,10 +1,10 @@
-import {Component} from "react";
+
 import "../../Components/5/rowContainerFeat.css";
 import plantOnATable from "../../img/plantOnATable.svg";
 import plantsOnAWall from "../../img/plantsOnAWall.svg";
 
-class rowContainerFeat extends Component{
-    render(){
+export default function rowContainerFeat(){
+
         return(
             <div class="rowContainerFeat">
         <div class="MontserratFont">
@@ -27,7 +27,3 @@ class rowContainerFeat extends Component{
       </div>
         )
     }
-      
-      
-}
-export default rowContainerFeat

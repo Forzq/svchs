@@ -1,10 +1,8 @@
-import {Component} from "react";
+
 import "../../Components/3/FeaturedCheaper.css";
 import downArrow from "../../img/downArrow.svg"
 
-
-class FeaturedCheaper extends Component{
-    render(){
+export default function FeaturedCheaper(){
         return(
             <div class="FeaturedCheaper MontserratFont rowContainerFeat">
             <p class="featPlants data-lang" data-lang="feat">
@@ -19,7 +17,3 @@ class FeaturedCheaper extends Component{
           </div>
         )
     }
-      
-      
-}
-export default FeaturedCheaper

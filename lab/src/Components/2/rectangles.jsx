@@ -1,12 +1,10 @@
-import {Component} from "react";
 import "../../Components/2/rectangles.css"
 import delivery from "../../img/delivery.svg";
 import headphones from "../../img/headphones.svg";
 import plant from "../../img/plant.svg";
 import dollar from "../../img/dollar.svg";
+export default function Rectangles (){
 
-class Rectangles extends Component{
-    render(){
         return(
             <div class="rectangles MontserratFont">
         <div class="rect">
@@ -71,8 +69,6 @@ class Rectangles extends Component{
         </div>
       </div>
         )
-    }
+      }
       
       
-}
-export default Rectangles

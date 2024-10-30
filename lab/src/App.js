@@ -1,24 +1,18 @@
 
 import './App.css';
-import FirstContainer from './Components/firstContainer/firstContainerComp.jsx';
-import Rectangles from './Components/2/rectangles.jsx';
-import FeaturedCheaper from './Components/3/FeaturedCheaper.jsx';
-import Kaktuses from './Components/4/kaktuses.jsx';
-import RowContainerFeat from './Components/5/rowContainerFeat.jsx';
-import FifthContainer from './Components/6/fifthContainer.jsx';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import HomePage from './pages/HomePage.jsx';
 
 function App() {
   return (
     <>
-     <FirstContainer/>
-     <Rectangles/>
-     <FeaturedCheaper/>
-     <Kaktuses/>
-     <RowContainerFeat/>
-     <FifthContainer/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element = {<HomePage/>}/>
+      </Routes>
+    </BrowserRouter>
     </>
-    
   );
-}
 
+}
 export default App;

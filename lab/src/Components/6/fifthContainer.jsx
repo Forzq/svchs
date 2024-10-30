@@ -1,9 +1,9 @@
-import {Component} from "react";
+
 import "../../Components/6/fifthContainer.css";
 import plant5 from "../../img/plant5.svg";
 
-class fifthContainer extends Component{
-    render(){
+export default function fifthContainer(){
+
         return(
             <div class="fifthContainer">
         <div class="rowContainerFeat">
@@ -24,7 +24,3 @@ class fifthContainer extends Component{
       </div>
         )
     }
-      
-      
-}
-export default fifthContainer
