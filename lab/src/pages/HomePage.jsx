@@ -2,8 +2,8 @@ import FirstContainer from '../Components/firstContainer/firstContainerComp.jsx'
 import Rectangles from '../Components/2/rectangles.jsx';
 import FeaturedCheaper from '../Components/3/FeaturedCheaper.jsx';
 import Kaktuses from '../Components/4/kaktuses.jsx';
-import rowContainerFeat from '../Components/5/rowContainerFeat.jsx';
-import fifthContainer from '../Components/6/fifthContainer.jsx';
+import RowContainerFeat from '../Components/5/rowContainerFeat.jsx';
+import FifthContainer from '../Components/6/fifthContainer.jsx'
 export default function HomePage(){
     return(
         <>
@@ -11,8 +11,8 @@ export default function HomePage(){
         <Rectangles/>
         <FeaturedCheaper/>
         <Kaktuses/>
-        <rowContainerFeat/>
-        <fifthContainer/>
+        <RowContainerFeat/>
+        <FifthContainer/>
         </>
     )
 }

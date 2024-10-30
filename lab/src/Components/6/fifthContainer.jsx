@@ -3,7 +3,6 @@ import "../../Components/6/fifthContainer.css";
 import plant5 from "../../img/plant5.svg";
 
 export default function fifthContainer(){
-
         return(
             <div class="fifthContainer">
         <div class="rowContainerFeat">
