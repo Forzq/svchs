@@ -8,6 +8,7 @@ import logo from "../../img/logo.svg";
 import menu from "../../img/menu.png";
 import leftArrow from "../../img/leftArrow.svg";
 import rightArrow from "../../img/rightArrow.svg";
+import {Link} from "react-router-dom";
 export default function FirstContainer(){
     
         return(
@@ -109,6 +110,7 @@ export default function FirstContainer(){
                   </p>
                 </div>
               </button>
+              <Link to="/Ideas">
               <button className="nextButton MontserratFont">
                 <div>
                   <div className="rowArrow">
@@ -122,6 +124,7 @@ export default function FirstContainer(){
                   </p>
                 </div>
               </button>
+              </Link>
             </div>
           </div>
           </div>

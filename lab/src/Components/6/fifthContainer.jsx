@@ -1,6 +1,7 @@
 
 import "../../Components/6/fifthContainer.css";
 import plant5 from "../../img/plant5.svg";
+import {Link} from "react-router-dom";
 
 export default function fifthContainer(){
         return(
@@ -11,9 +12,11 @@ export default function fifthContainer(){
               <a href="#thirdContainer" class="favourite data-lang KFM" data-lang="fav">
                 Get your favourites plant on our shop now
               </a>
+              <Link to="/About">
               <button class="visitShop NunitoFont data-lang visitButton" data-lang="visit">
                   Visit Shop
               </button>
+              </Link>
             </div>
           </div>
           <div>
@@ -21,5 +24,6 @@ export default function fifthContainer(){
           </div>
         </div>
       </div>
+      
         )
     }
