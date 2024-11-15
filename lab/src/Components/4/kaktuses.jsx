@@ -1,117 +1,44 @@
-
 import "../../Components/4/kaktuses.css";
 import kaktusPlants from "../../img/kaktusPlants.svg";
 import landakPlants from "../../img/landakPlants.svg";
 import kekubungPlants1 from "../../img/kekubungPlants1.svg";
 import kekubungPlants3 from "../../img/kekubungPlants3.svg";
 
-export default function Kaktuses(){
+// Создаем компонент карточки
+const PlantCard = ({ imgSrc, name, price, imgClassName }) => {
+  return (
+    <div className="item">
+      <img src={imgSrc} className={imgClassName} alt={name} />
+      <div className="MontserratFont kaktusText land">
+        <p className="data-lang" data-lang={name.toLowerCase().replace(" ", "")}>
+          {name}
+        </p>
+        <p>IDR {price}</p>
+      </div>
+    </div>
+  );
+};
 
-        return(
-            <div class="kaktuses">
-                <div class="item">
-                  <img src={kaktusPlants} class="kaktusImg"></img>
-                  <div class="MontserratFont kaktusText land">
-                    <p class=" data-lang" data-lang="kaktus1">
-                      Kaktus Plants
-                    </p>
-                    <p>
-                      IDR 85.000
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src={landakPlants} class="kaktusImg"></img>
-                  <div class="MontserratFont kaktusText land">
-                    <p data-lang="landak" class=" data-lang">
-                      Landak Plants
-                    </p>
-                    <p>
-                    {/* style="font-weight: 600"> */}
-                      IDR 105.000
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src={kekubungPlants1} class="kaktusImg"></img>
-                  <div class="MontserratFont kaktusText kecu">
-                    <p data-lang="kecub" class=" data-lang">
-                      Kecubung Plants
-                    </p>
-                    <p>
-                    {/* style="font-weight: 600"> */}
-                      IDR 85.000
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src={kaktusPlants} class="kaktusImg"></img>
-                  <div class="MontserratFont kaktusText kecu">
-                    <p  data-lang="kecub1" class=" data-lang">
-                      Kecubung Plants
-                    </p>
-                    <p>
-                    {/* style="font-weight: 600" */}
-                      IDR 85.000
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src={kekubungPlants3} class="kecu2Img"></img>
-                  <div class="MontserratFont kaktusText kecubung2">
-                    <p  class=" data-lang" data-lang="kecub2">
-                    {/* style="font-weight: 400;" */}
-                      Kecubung Plants
-                    </p>
-                    <p>
-                      IDR 85.000
-                    </p>
-                  </div>            
-                </div>
-                <div class="item">
-                  <img src={kaktusPlants} class="kaktusImg"></img>
-                  <div class="MontserratFont kaktusText land">
-                    <p data-lang="landak" class=" data-lang">
-                      Kecubung Plants
-                    </p>
-                    <p>
-                      IDR 85.000
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src={landakPlants} class="kaktusImg"></img>
-                  <div class="MontserratFont kaktusText land">
-                    <p data-lang="landak" class=" data-lang">
-                      Landak Plants
-                    </p>
-                    <p>
-                      IDR 105.000
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src={kekubungPlants3} class="kecu2Img"></img>           
-                  <div class="MontserratFont kaktusText land">
-                    <p data-lang="landak" class="data-lang">
-                      Kecubung Plants
-                    </p>
-                    <p>
-                      IDR 85.000
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src={kekubungPlants1} class="kaktusImg"></img>
-                  <div class="MontserratFont kaktusText land">
-                    <p data-lang="landak" class=" data-lang">
-                      Kecubung Plants
-                    </p>
-                    <p>
-                      IDR 105.000
-                    </p>
-                  </div>
-                </div>
-              </div>
-        )
-    }
+export default function Kaktuses() {
+  // Создаем массив данных для карточек
+  const plants = [
+    { imgSrc: kaktusPlants, name: "Kaktus Plants", price: 85000, imgClassName: "kaktusImg" },
+    { imgSrc: landakPlants, name: "Landak Plants", price: 115000, imgClassName: "kaktusImg" },
+    { imgSrc: kekubungPlants1, name: "Kecubung Plants", price: 85000, imgClassName: "kaktusImg" },
+    { imgSrc: kaktusPlants, name: "Kecubung Plants", price: 85000, imgClassName: "kaktusImg" },
+    { imgSrc: kekubungPlants3, name: "Kecubung Plants", price: 85000, imgClassName: "kecu2Img" },
+    { imgSrc: kaktusPlants, name: "Kecubung Plants", price: 85000, imgClassName: "kaktusImg" },
+    { imgSrc: landakPlants, name: "Landak Plants", price: 115000, imgClassName: "kaktusImg" },
+    { imgSrc: kekubungPlants3, name: "Kecubung Plants", price: 85000, imgClassName: "kecu2Img" },
+    { imgSrc: kekubungPlants1, name: "Kecubung Plants", price: 105000, imgClassName: "kaktusImg" },
+  ];
+
+  return (
+    <div className="kaktuses">
+      {/* Отображаем карточки, используя метод map */}
+      {plants.map((plant, index) => (
+        <PlantCard key={index} {...plant} />
+      ))}
+    </div>
+  );
+}
