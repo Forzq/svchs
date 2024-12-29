@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import "../../Components/4/kaktuses.css";
 import kaktusPlants from "../../img/kaktusPlants.svg";
 import landakPlants from "../../img/landakPlants.svg";
 import kekubungPlants1 from "../../img/kekubungPlants1.svg";
 import kekubungPlants3 from "../../img/kekubungPlants3.svg";
+import RatingComp from "../ratingComp.jsx";
 
 const availableOptions = [
   { imgSrc: kaktusPlants, name: "Kaktus Plants", price: 85000, imgClassName: "kaktusImg" },
@@ -43,7 +43,6 @@ const EditModal = ({ plant, onClose, onSave }) => {
   );
 };
 
-
 const AddModal = ({ onClose, onAdd }) => {
   const [selectedOption, setSelectedOption] = useState(availableOptions[0]);
 
@@ -69,7 +68,6 @@ const AddModal = ({ onClose, onAdd }) => {
   );
 };
 
-
 export default function Kaktuses() {
   const [plants, setPlants] = useState([]);
   const [editingPlant, setEditingPlant] = useState(null);
@@ -88,18 +86,14 @@ export default function Kaktuses() {
     setEditingPlant(null);
   };
 
-
   const handleDelete = (plant) => {
     const updatedPlants = plants.filter(p => p !== plant);
     setPlants(updatedPlants);
   };
 
-
-
   const handleAddPlant = (newPlant) => {
     setPlants([...plants, newPlant]);
   };
-
 
   const handleOpenAddModal = () => {
     setShowAddModal(true);
@@ -109,19 +103,19 @@ export default function Kaktuses() {
     setShowAddModal(false);
   };
 
-
-
   return (
     <div className="kaktuses">
-      <button className = "addButton" onClick={handleOpenAddModal}>Добавить карточку</button>
+      <button className="addButton" onClick={handleOpenAddModal}>Добавить карточку</button>
 
       {plants.map((plant, index) => (
-        <PlantCard
-          key={index}
-          {...plant}
-          onEdit={() => handleEdit(plant)}
-          onDelete={() => handleDelete(plant)}
-        />
+        <div key={index}>
+          <PlantCard
+            {...plant}
+            onEdit={() => handleEdit(plant)}
+            onDelete={() => handleDelete(plant)}
+          />
+          <RatingComp />
+        </div>
       ))}
 
       {editingPlant && <EditModal plant={editingPlant} onClose={handleCloseModal} onSave={handleSave} />}
