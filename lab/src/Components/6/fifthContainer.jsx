@@ -2,6 +2,7 @@
 import "../../Components/6/fifthContainer.css";
 import plant5 from "../../img/plant5.svg";
 import {Link} from "react-router-dom";
+import  List  from "../mui/list";
 
 export default function fifthContainer(){
         return(
@@ -23,6 +24,7 @@ export default function fifthContainer(){
           <img src={plant5} class="plant5"></img>
           </div>
         </div>
+        <List/>
       </div>
       
         )

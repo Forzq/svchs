@@ -5,6 +5,7 @@ import landakPlants from "../../img/landakPlants.svg";
 import kekubungPlants1 from "../../img/kekubungPlants1.svg";
 import kekubungPlants3 from "../../img/kekubungPlants3.svg";
 import RatingComp from "../ratingComp.jsx";
+import  Fab  from '../mui/fab';
 
 const availableOptions = [
   { imgSrc: kaktusPlants, name: "Kaktus Plants", price: 85000, imgClassName: "kaktusImg" },
