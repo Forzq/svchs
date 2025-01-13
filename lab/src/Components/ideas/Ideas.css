@@ -12,6 +12,7 @@
     font-family: "Readex Pro", sans-serif;
     grid-gap: 20px;
     padding-top: 3.4%;
+    width: 60%;
 }
 .frame5GridItem p{
     font-size: 147%;
@@ -53,5 +54,8 @@
     white-space: nowrap;
 }
 .frame5GridItem img{
+    width: 400px;
+}
+.frame5GridItem{
     width: 400px;
 }

@@ -4,11 +4,13 @@ import kaktus1 from "../../img/kekubungPlants1.svg";
 import kaktus2 from "../../img/kekubungPlants2.svg";
 import kaktus3 from "../../img/kekubungPlants3.svg";
 import kaktus4 from "../../img/landakPlants.svg";
+import Fab from "../mui/fab"
 
 export default function ShopOur(){
     
         return(
             <div class="shopOur">
+                
             <div class="textShopOur">
                 <h3>Shop our latest offers and categories</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -57,6 +59,7 @@ export default function ShopOur(){
                     </div>
                 </div>
             </div>
+            <Fab/>
         </div>
       
         )
