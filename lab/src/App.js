@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage.jsx';
 import AboutUs from './pages/aboutUs.jsx';
 import Ideas from './pages/Ideasaddition.jsx';
 import ErrorPage from './Components/error404/errorComp.jsx';
+import Redooxiki from './pages/redooxiki.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element = {<HomePage/>}/>
         <Route path="/About" element = {<AboutUs/>}/>
         <Route path="/Ideas" element = {<Ideas/>}/>
+        <Route path="/Redooxiki" element = {<Redooxiki/>}/>
         <Route path="*" element = {<ErrorPage/>}/>
       </Routes>
     </BrowserRouter>

@@ -30,10 +30,10 @@ export default function FirstContainer(){
           <div>
             <div className="logo">
                 <img src={logo} className="logoImg"></img>
-                <select className="change-lang NunitoFont">
+                {/* <select className="change-lang NunitoFont">
                   <option value="en" >EN</option>
                   <option value="ru" selected>RU</option>
-                </select>
+                </select> */}
 
               </div>
             </div>
@@ -73,6 +73,7 @@ export default function FirstContainer(){
               </p>
             </div>
             <div className="PrevNextButtons">
+              <Link to="/Redooxiki">
               <button className="previousButton MontserratFont">
                 <div>
                   <div className="rowArrow">
@@ -86,6 +87,7 @@ export default function FirstContainer(){
                   </p>
                 </div>
               </button>
+              </Link>
               <Link to="/Ideas">
               <button className="nextButton MontserratFont">
                 <div>
