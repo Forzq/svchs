@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import foodReducer from '../Redux/taskslice';
+import cactusReducer from '../Redux/taskslice';
 import userReducer from './userslice';
 
 const store = configureStore({
   reducer: {
-    food: foodReducer,
+    cactus: cactusReducer,
     user: userReducer,
   },
 });

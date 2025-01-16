@@ -6,7 +6,7 @@ import Button from "../mui/button.jsx"
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import {Box} from '@mui/material'
+import {Box} from '@mui/material';
 
 export default function Ideas(){
     

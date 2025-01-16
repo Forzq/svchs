@@ -5,22 +5,22 @@ const initialState = {
   error: null,
 };
 
-const foodSlice = createSlice({
-  name: 'food',
+const cactusSlice = createSlice({
+  name: 'cactus',
   initialState,
   reducers: {
-    addfood(state, action) {
+    addcactus(state, action) {
       state.items.push(action.payload);
     },
-    updatefood(state, action) {
+    updatecactus(state, action) {
       const index = state.items.findIndex(item => item.id === action.payload.id);
       if (index !== -1) {
         state.items[index] = action.payload;
       } else {
-        state.error = 'Food item not found';
+        state.error = 'cactus item not found';
       }
     },
-    removefood(state, action) {
+    removecactus(state, action) {
       state.items = state.items.filter(item => item.id !== action.payload);
     },
     setError(state, action) {
@@ -29,5 +29,5 @@ const foodSlice = createSlice({
   },
 });
 
-export const { addfood, updatefood, removefood, setError } = foodSlice.actions;
-export default foodSlice.reducer;
+export const { addcactus, updatecactus, removecactus, setError } = cactusSlice.actions;
+export default cactusSlice.reducer;
